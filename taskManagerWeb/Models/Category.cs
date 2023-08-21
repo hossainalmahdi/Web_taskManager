@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
 namespace taskManagerWeb.Models;
-public class Catagory
+public class Category
 {
     [Key]
     public int Id { get; set; }
