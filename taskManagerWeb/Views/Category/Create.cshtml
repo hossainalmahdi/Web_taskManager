@@ -6,5 +6,24 @@
             <h2 class="text-primary">Create Category</h2>
             <hr />
         </div>
+        <div class="mb-3">
+            <label asp-for="Name"></label>
+            <input type="text" placeholder="Enter Name" asp-for="Name" class="form-control"/>
+            @* Client side Validation *@
+            <span asp-validation-for="Name" class="text-bg-danger"></span> 
+        </div>
+        <div class="mb-3">
+            <label asp-for="DisplayOrder"></label>
+            <input asp-for="DisplayOrder" placeholder="Enter Number" class="form-control" />
+            <span asp-validation-for="DisplayOrder" class="text-bg-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="Comments">Task Notes</label>
+            <input asp-for="Comments" placeholder="Enter Additional Notes" class="form-control" />
+            <span asp-validation-for="Comments" class="text-bg-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:150px">Create</button>
+        <a asp-controller="category" asp-action="Index" class="btn btn-secondary" style="width:150px">Back To Table</a>
     </div>
 </form>
