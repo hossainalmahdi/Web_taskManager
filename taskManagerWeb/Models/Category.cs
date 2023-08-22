@@ -8,6 +8,8 @@ public class Category
     [Required]
     public string Name { get; set; }
     public int DisplayOrder { get; set; }
+    [Required]
+    public string Comments { get; set; }
     public DateTime CreatedDateTime { get; set; } = DateTime.Now;
     
 }
