@@ -9,7 +9,7 @@
             <h2 class="text-primary">Bookstore Task Manager</h2>
         </div>
         <div class="col-6 text-end">
-            <a asp-controller="Category" asp-action="Create" class="btn btn-primary"><i class="bi bi-plus-circle"></i> Create New Catagory</a>
+            <a asp-controller="Category" asp-action="Create" class="btn btn-primary"><i class="bi bi-plus-circle"></i> Create New</a>
         </div>
     </div>
     <br /> <br />
@@ -27,10 +27,10 @@
                 Display Order
             </th>
             <th>
-                TaskNotes
+                Task Notes
             </th>
             <th>
-                DateTime
+                Ordered DateTime
             </th>
             <th></th>
         </tr>
@@ -58,6 +58,8 @@
                         <div class="btn-group w-75" role="group">
                             <a asp-controller="Category" asp-action="Edit" asp-route-id="@obj.Id"
                             class="btn btn-outline-warning"><i class="bi bi-pencil-square"></i>Edit</a>
+                            <a asp-controller="Category" asp-action="Delete" asp-route-id="@obj.Id"
+                               class="btn btn-warning"><i class="bi bi-trash"></i></a>
                         </div>
                     </td>
                 </tr>

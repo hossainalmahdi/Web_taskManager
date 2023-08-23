@@ -76,7 +76,7 @@
 .ghost-shadow {
     height: 20px;
     width: 200px;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(247, 245, 245,0.1);
     position: relative;
     bottom: 80px;
     border-radius: 50%;
