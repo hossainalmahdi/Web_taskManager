@@ -43,6 +43,7 @@ namespace taskManagerWeb.Controllers
             {
                 _db.Categories.Add(obj);
                 _db.SaveChanges();
+                TempData["success"] = "The Entry has been created successfully.";
                 return RedirectToAction("Index");
             }   
             return View();
@@ -86,6 +87,7 @@ namespace taskManagerWeb.Controllers
             {
                 _db.Categories.Update(obj);
                 _db.SaveChanges();
+                TempData["success"] = "The Entry has been updated successfully.";
                 return RedirectToAction("Index");
             }
             return View();
@@ -122,7 +124,8 @@ namespace taskManagerWeb.Controllers
            
              _db.Categories.Remove(obj);
              _db.SaveChanges();
-             return RedirectToAction("Index");
+            TempData["success"] = "The Entry has been deleted successfully.";
+            return RedirectToAction("Index");
         }
     }
 }
