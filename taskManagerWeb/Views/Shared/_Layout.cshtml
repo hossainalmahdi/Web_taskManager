@@ -15,7 +15,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand"  asp-controller="Home" asp-action="Index">taskManagerWeb</a>
+                <a class="navbar-brand"  asp-controller="Home" asp-action="Index">BookStore Task Manager</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -29,6 +29,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" asp-controller="Category" asp-action="Index">Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="CategoriesTemp" asp-action="Index">Category(Autogen)</a>
                         </li>
                     </ul>
                     <form class="d-flex">
